@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak - Pinkylicious Café</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff0f6;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    :root {
+      --primary: #f48fb1;
+      --secondary: #c2185b;
+      --bg-light: #ffe4ef;
+      --button-bg: #ff69b4; /* pink cerah */
+      --button-hover: #ff85c1; /* pink lebih muda saat hover */
+    }
+
+    /* Header */
+    header {
+      background-color: var(--primary);
+      padding: 20px;
+      border-bottom: 3px solid var(--secondary);
+    }
+    header h1 {
+      color: var(--secondary);
+    }
+
+    /* Menu Dropdown */
+    .menu-ngoding {
+      background-color: var(--secondary);
+      margin-top: 15px;
+    }
+    .menu-ngoding ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .menu-ngoding > ul > li {
+      float: left;
+    }
+    .menu-ngoding li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+    }
+    .menu-ngoding li a:hover {
+      background-color: #880e4f;
+    }
+    li.dropdown {
+      display: inline-block;
+    }
+    .dropdown:hover .isi-dropdown {
+      display: block;
+    }
+    .isi-dropdown {
+      position: absolute;
+      display: none;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      background-color: #f9f9f9;
+    }
+    .isi-dropdown a {
+      color: #3c3c3c !important;
+      display: block;
+      padding: 10px;
+      text-align: left;
+    }
+    .isi-dropdown a:hover {
+      color: #232323 !important;
+      background: #f3f3f3 !important;
+    }
+
+    /* Form */
+    form {
+      margin: 40px auto;
+      width: 60%;
+      background: var(--bg-light);
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid var(--primary);
+    }
+    fieldset {
+      border: none;
+    }
+    legend {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--secondary);
+    }
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid var(--primary);
+      border-radius: 5px;
+    }
+
+    /* Tombol Kirim (Link bergaya tombol) */
+    .btn-kirim {
+      display: inline-block;
+      background-color: var(--button-bg);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .btn-kirim:hover {
+      background-color: var(--button-hover);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background-color: var(--primary);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📞 Kontak Pinkylicious Café 📞</h1>
+
+   <div class="menu-ngoding">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+          <a href="#">Menu▼</a>
+          <ul class="isi-dropdown">
+                           <li><a href="about.html">Food Pink</a></li>
+               <li><a href="css.html">Food Pink</a></li>
+          </ul>
+          </li>
+        <li class="dropdown">
+          <a href="#">Layanan ▼</a>
+          <ul class="isi-dropdown">
+             <li><a href="css  new.html">Spot</a></li> 
+            <li><a href="salon.html">Kontak</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <form>
+    <fieldset>
+      <legend>Formulir Registrasi / Pemesanan</legend>
+      <p>
+        <label>Nama</label><br>
+        <input type="text" name="Name" placeholder="Nama lengkap..." required>
+      </p>
+      <p>
+        <label>No Telp</label><br>
+        <input type="No Telp" name="No Telp" placeholder="..." required>
+      </p>
+      <p>
+        <label>Pesan</label><br>
+        <textarea name="Message" rows="4" placeholder="Tulis pesan di sini..." required></textarea>
+      </p>
+
+      <!-- Tombol Kirim -->
+      <p>
+        <a href="vscode latihan tabel mapel.html" class="btn-kirim">Kirim</a>
+      </p>
+    </fieldset>
+  </form>
+
+  <footer>
+    <p>© 2025 Pinkylicious Café | Designed by Nika</p>
+  </footer>
+
+</body>
+</html>
